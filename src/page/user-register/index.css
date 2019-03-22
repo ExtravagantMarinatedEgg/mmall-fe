@@ -1,9 +1,5 @@
-/*
-* @Author: Rosen
-* @Date:   2017-05-22 09:09:04
-* @Last Modified by:   Rosen
-* @Last Modified time: 2017-05-22 09:09:22
-*/
+/* 用户注册 */
+
 /* 最外层容器 */
 .page-wrap{
     padding: 40px 0;
@@ -14,7 +10,11 @@
     position: relative;
     margin: 0 auto;
     width: 400px;
+/*    height: 615px;*/
     background: #fff;
+    -webkit-box-shadow: #666 0px 0px 10px;  
+    -moz-box-shadow: #666 0px 0px 10px;  
+    box-shadow: #666 0px 0px 10px; 
 }
 .user-con .user-title{
     text-align: center;
@@ -45,14 +45,19 @@
     font-size: 14px;
     margin-top: -7px;
 }
-
+/* input */
 .user-con .user-item{
     position: relative;
     margin-bottom: 20px;
 }
-.user-con .user-item .user-label{
+/*.user-con .user-item:hover{
+    border-style:solid;  
+    border-color: #03a9f4;  
+    box-shadow: 0 0 15px #03a9f4; 
+}
+*/.user-con .user-item .user-label{
     position: absolute;
-    left: 1px;
+    left: 0px;
     top: 1px;
     bottom: 1px;
     width: 40px;
@@ -62,11 +67,12 @@
     color: #d3d3d3;
     text-align: center;
     border-right: 1px solid #bdbdbd;
+    border-left: 1px solid red;
 }
 .user-con .user-item .user-content{
     padding: 10px 0 10px 50px;
-    width: 308px;
-    height: 18px;
+    width: 100%;
+    height: 40px;
     line-height: 18px;
     font-size: 15px;
     border: 1px solid #bdbdbd;
@@ -85,5 +91,24 @@
 }
 .user-con .link-item .link{
     margin-left: 10px;
-    color: #999;
+    /*color: #999;*/
+}
+/* 图标 */
+.user-con .user-item .user-label .fa-user{
+	margin-top: 10px;
+}
+.user-con .user-item .user-label .fa-lock{
+	margin-top: 10px;
+}
+.user-con .user-item .user-label .fa-phone{
+	margin-top: 10px;
+}
+.user-con .user-item .user-label .fa-question{
+	margin-top: 10px;
+}
+.user-con .user-item .user-label .fa-envelope{
+	margin-top: 10px;
+}
+.user-con .user-item .user-label .fa-key{
+	margin-top: 10px;
 }

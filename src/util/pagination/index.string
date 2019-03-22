@@ -1,3 +1,4 @@
+<!-- 分页组件 -->
 <div class="pg-content">
     {{#pageArray}}
     {{#disabled}}

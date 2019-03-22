@@ -1,0 +1,41 @@
+<!-- 订单确认页 -->
+<!DOCTYPE html>
+<html>
+    <head>
+    <%= require('html-loader!./layout/head-common.html')%>
+    <title><%= htmlWebpackPlugin.options.title %> - MMall电商平台</title>
+    </head>
+<body>
+    <%= require('html-loader!./layout/nav.html')%>          <!-- 登录，注册，购物车，我的MMall，关于MMall -->
+    <%= require('html-loader!./layout/header.html')%>       <!-- 带搜索框的login -->
+    <!-- 面包屑 -->
+    <div class="crumb">
+        <div class="w">
+            <div class="crumb-con">
+                <a href="./index.html" class="link">MMall</a>
+                <span>></span>
+                <span class="link-text"><%= htmlWebpackPlugin.options.title %></span>
+            </div>
+        </div>
+    </div>
+    <div class="page-wrap w">
+        <div class="panel">
+            <h1 class="panel-title">收货地址</h1>
+            <div class="panel-body address-con">
+  
+            </div>
+        </div>
+        <div class="panel">
+            <h1 class="panel-title">商品清单</h1>
+            <div class="panel-body product-con">
+                
+            </div>
+        </div>   
+    </div>
+    <!-- 弹框的地方 -->
+    <div class="modal-wrap">
+        
+    </div>
+    <%= require('html-loader!./layout/footer.html')%>       <!-- 底部链接，版权 -->
+</body>
+</html>

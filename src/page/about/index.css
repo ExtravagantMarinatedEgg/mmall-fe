@@ -1,0 +1,24 @@
+/* 关于MMall */
+.title-con{
+
+}
+.title-con .text-con{
+    font-size: 15px;
+    color: #6C6C6C;
+    padding-left: 20px;
+    line-height: 25px;
+}
+.title-con .text-con.title{
+    font-weight: bold;
+    margin-left: 20px;
+}
+.title-con .text-con .link{
+    margin-left: 10px;
+}
+.title-con .img{
+    margin-left: 200px;
+}
+.title-con .img .img-con{
+    height: 100px;
+    width: 100px;
+}

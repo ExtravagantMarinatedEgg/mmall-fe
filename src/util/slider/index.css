@@ -1,22 +1,17 @@
-/*
-* @Author: Rosen
-* @Date:   2017-05-26 18:19:21
-* @Last Modified by:   Rosen
-* @Last Modified time: 2017-05-26 19:12:42
-*/
+/* index.html图片轮播 */
 /* banner */
-.banner{
-    position: relative; 
+.banner {
+    position:relative;
     overflow: auto; 
 }
-.banner li { 
-    list-style: none; 
+.banner li {
+ list-style: none; 
 }
-.banner ul li { 
+.banner ul li {
     float: left; 
 }
 /* 引导的小圆点 */
-.banner .dots {
+.banner .dots{
     position: absolute;
     left: 0;
     right: 0;

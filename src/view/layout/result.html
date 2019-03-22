@@ -1,0 +1,17 @@
+<!-- 通用操作提示页 -->
+<html>
+	<head>
+		<%= require('html-loader!./layout/head-common.html')%>
+		<title><%= htmlWebpackPlugin.options.title %>_MMall电商平台</title>
+	</head>
+	<body>
+		<%= require('html-loader!./layout/nav-simple.html')%> 	<!-- 头部 -->
+		<%= require('html-loader!./layout/nav.html')%>			<!-- 登录，注册，购物车，我的MMall，关于MMall -->
+		<%= require('html-loader!./layout/header.html')%>		<!-- 带搜索框的login -->
+	<div class="page-wrap w">
+		<%=require('html-loader!./layout/nav-side.html') %>  <!-- 左侧导航 -->
+		<div class="content with-nav">test</div>
+	</div>
+		<%= require('html-loader!./layout/footer.html')%>		<!-- 底部链接，版权 -->
+	</body>
+</html>

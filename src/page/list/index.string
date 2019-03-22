@@ -14,5 +14,5 @@
     </li>
 {{/list}}
 {{^list}}
-    <p class="err-tip">很抱歉，实在找不到您要的商品。</p>
+    <p class="err-tip">嘤嘤嘤~~你要的商品暂时找不到，我们会尽快上架。</p>
 {{/list}}

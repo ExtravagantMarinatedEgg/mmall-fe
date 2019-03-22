@@ -1,17 +1,12 @@
-/*
-* @Author: Rosen
-* @Date:   2017-05-30 16:51:25
-* @Last Modified by:   Rosen
-* @Last Modified time: 2017-06-02 21:09:14
-*/
-
-'use strict';
+// 购物车模块
 require('./index.css');
-require('page/common/header/index.js');
-var nav             = require('page/common/nav/index.js');
-var _mm             = require('util/mm.js');
-var _cart           = require('service/cart-service.js');
-var templateIndex   = require('./index.string');
+require('page/common/nav-simple/index.js');//头部导航
+require('page/common/header/index.js'); //带搜索框的login
+var nav 			= require('page/common/nav/index.js');//登录，注册，购物车，我的MMall，关于MMall
+var navSide 		= require('page/common/nav-side/index.js');//左侧导航
+var _mm 			= require('util/mm.js');
+var _cart 			= require('service/cart-service.js');
+var templateIndex 	= require('./index.string');
 
 var page = {
     data : {
@@ -40,7 +35,7 @@ var page = {
             }
             // 取消选中
             else{
-                _cart.unselectProduct(productId, function(res){
+                _cart.unSelectProduct(productId, function(res){
                     _this.renderCart(res);
                 }, function(errMsg){
                     _this.showCartError();
@@ -60,7 +55,7 @@ var page = {
             }
             // 取消全选
             else{
-                _cart.unselectAllProduct(function(res){
+                _cart.unSelectAllProduct(function(res){
                     _this.renderCart(res);
                 }, function(errMsg){
                     _this.showCartError();
@@ -90,7 +85,7 @@ var page = {
                 newCount = currCount - 1;
             }
             // 更新购物车商品数量
-            _cart.updateProduct({
+            _cart.updateProductCount({
                 productId : productId,
                 count : newCount
             }, function(res){
@@ -129,7 +124,7 @@ var page = {
         $(document).on('click', '.btn-submit', function(){
             // 总价大于0，进行提交
             if(_this.data.cartInfo && _this.data.cartInfo.cartTotalPrice > 0){
-                window.location.href = './confirm.html';
+                window.location.href = './order-confirm.html';
             }else{
                 _mm.errorTips('请选择商品后再提交');
             }

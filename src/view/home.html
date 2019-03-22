@@ -1,0 +1,360 @@
+<!-- 新首页 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<head>
+	<%= require('html-loader!./layout/head-common.html')%>
+	<title><%= htmlWebpackPlugin.options.title %> - mmall电商平台</title>
+	</head>
+</head>
+<body>
+	<%= require('html-loader!./layout/nav.html')%>			<!-- 登录，注册，购物车，我的MMall，关于MMall -->
+	<%= require('html-loader!./layout/header.html')%>		<!-- 带搜索框的login -->
+	  <div class="main" id="main">
+	    <div class="menu-box"></div>
+	    <div class="sub-menu hide" id="sub-menu">
+	      <div class="inner-box">
+	        <div class="sub-inner-box">
+	          <div class="title">数码家电</div>
+	          <div class="sub-row">
+	            <span >
+	            	<ul href="" class="bold">家电:</ul>
+	            	<span class="links">
+			            <a href="">吸尘器</a> /
+			            <a href="">吹风机</a> /
+			            <a href="">剃须刀</a>
+		            </span>
+	            </span>
+	            <span>
+	            	<ul href="" class="bold">数码:</ul>
+	            	<span class="links">
+			            <a href="">苹果 Apple iPad Pro</a> /
+			            <a href="">数码相机</a> /
+			            <a href="">华为 MateBook</a>
+		            </span>
+	            </span>
+	            <span>
+	            	<ul href="" class="bold">手机：</ul>
+	            	<span class="links">
+			            <a href="">苹果6 plus</a> /
+			            <a href="">iphone 7 plus</a> /
+			            <a href="">三星</a>
+		            </span>
+	            </span>
+	          </div>
+	        </div>
+	      </div>
+	      <div class="inner-box">
+	        <div class="sub-inner-box">
+	          <div class="title">鞋靴箱包</div>
+	          <div class="sub-row">
+	            <span class="bold ">全部：</span>
+	            <a href="">户外休闲鞋</a> /
+	            <a href="">骚包</a> /
+	            <a href="">双肩包</a>
+	          </div>
+	        </div>
+	      </div>
+	      <div class="inner-box">
+	        <div class="sub-inner-box">
+	          <div class="title">服装内衣</div>
+	          <div class="sub-row">
+	            <span class="bold ">全部：</span>
+	            <a href="">羽绒服</a> /
+	            <a href="">卫衣</a>
+	          </div>
+	        </div>
+	      </div>
+	      <div class="inner-box">
+	        <div class="sub-inner-box">
+	          <div class="title">学习办公</div>
+	          <div class="sub-row">
+	            <span class="bold ">全部：</span>
+	            <a href="">打印机</a> /
+	            <a href="">办公纸</a> /
+	            <a href="">点钞机</a>
+	          </div>
+	        </div>
+	      </div>
+	      <div class="inner-box">
+	        <div class="sub-inner-box">
+	          <div class="title">家具家纺</div>
+	          <div class="sub-row">
+	            <span class="bold ">全部：</span>
+	            <a href="">沙发</a> /
+	            <a href="">窗帘</a> /
+	            <a href="">床上用品</a>
+	          </div>
+	        </div>
+	      </div>
+	      <div class="inner-box">
+	        <div class="sub-inner-box">
+	          <div class="title">游戏动漫</div>
+	          <div class="sub-row">
+	            <span class="bold ">全部：</span>
+	            <a href="">热门手办</a> /
+	            <a href="">PS4游戏</a> 
+	          </div>
+	        </div>
+	      </div>
+	      <div class="inner-box">
+	        <div class="sub-inner-box">
+	          <div class="title">珠宝首饰</div>
+	          <div class="sub-row">
+	            <span class="bold ">全部：</span>
+	            <a href="">翡翠玉石</a> /
+	            <a href="">情侣对戒</a> /
+	            <a href="">黄金首饰</a>
+	          </div>
+	        </div>
+	      </div>
+	    </div>
+	    <div class="menu-content" id="menu-content">
+	      <div class="menu-item">
+	        <a href="">
+	                <span>数码家电</span>
+	                <i class="icon">&#xe665;</i>
+	            </a>
+	      </div>
+	      <div class="menu-item">
+	        <a href="">
+	                <span>鞋靴箱包</span>
+	                <i class="icon">&#xe665;</i>
+	            </a>
+	      </div>
+	      <div class="menu-item">
+	        <a href="">
+	                <span>服装内衣</span>
+	                <i class="icon">&#xe665;</i>
+	            </a>
+	      </div>
+	      <div class="menu-item">
+	        	<a href="">
+	                <span>学习办公</span>
+	                <i class="icon">&#xe665;</i>
+	            </a>
+	      </div>
+	      <div class="menu-item">
+	        	<a href="">
+	                <span>家具家纺</span>
+	                <i class="icon">&#xe665;</i>
+	            </a>
+	      </div>
+	      <div class="menu-item">
+	        	<a href="">
+	                <span>游戏动漫</span>
+	                <i class="icon">&#xe665;</i>
+	            </a>
+	      </div>
+	      <div class="menu-item">
+	        	<a href="">
+	                <span>珠宝首饰</span>
+	                <i class="icon">&#xe665;</i>
+	            </a>
+	      </div>
+	    </div>
+	    <div class="banner" id="banner">
+	      <a href="">
+	        <div class="banner-slide slide1 slide-active">
+				<img class="banner-img" src="<%= require('../image/banner3.jpg')%>" />
+	        </div>
+	      </a>
+	      <a href="">
+	        <div class="banner-slide slide2">
+				<img class="banner-img" src="<%= require('../image/banner4.jpg')%>" />
+	        </div>
+	      </a>
+	      <a href="">
+	        <div class="banner-slide slide3">
+				<img class="banner-img" src="<%= require('../image/banner5.jpg')%>" />
+	        </div>
+	      </a>
+	    </div>
+	    <a href="javascript:void(0)" class="button prev" id="prev"></a>
+	    <a href="javascript:void(0)" class="button next" id="next"></a>
+	    <div class="dots" id="dots">
+	      <span class="active"></span>
+	      <span></span>
+	      <span></span>
+	    </div>
+	  </div>
+	  <div class="w">
+		<div class="floor-wrap">
+			<h1 class="floor-title">F1-家用电器</h1>
+			<ul class="floor-list">
+				<li class="floor-item">
+					<a href="./list.html?categoryId=100006">
+						<span class="floor-text">双开门冰箱</span>
+						<img class="floor-img" src="<%= require('../image/F1-a.jpg')%>" alt="双开门冰箱" />
+					</a>
+				</li>
+				<li class="floor-item">
+					<a href="./list.html?categoryId=100007">
+						<span class="floor-text">高清电视机</span>
+						<img class="floor-img" src="<%= require('../image/F1-c.jpg')%>" alt="高清电视机" />
+					</a>
+				</li>
+				<li class="floor-item">
+					<a href="./list.html?categoryId=100008">
+						<span class="floor-text">洗衣机</span>
+						<img class="floor-img" src="<%= require('../image/F1-d.jpg')%>" alt="洗衣机" />
+					</a>
+				</li>
+				<li class="floor-item">
+					<a href="./list.html?categoryId=100009">
+						<span class="floor-text">空调</span>
+						<img class="floor-img" src="<%= require('../image/F1-b.jpg')%>" alt="空调" />
+					</a>
+				</li>
+				<li class="floor-item">
+					<a href="./list.html?categoryId=100010">
+						<span class="floor-text">电热水器</span>
+						<img class="floor-img" src="<%= require('../image/F1-e.jpg')%>" alt="电热水器" />
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="floor-wrap">
+			<h1 class="floor-title">F2-数码3C</h1>
+			<ul class="floor-list">
+				<li class="floor-item">
+					<a href="./list.html?categoryId=100011">
+						<span class="floor-text">笔记本</span>
+						<img class="floor-img" src="<%= require('../image/F1-a.jpg')%>" alt="笔记本" />
+					</a>
+				</li>
+				<li class="floor-item">
+					<a href="./list.html?categoryId=100012">
+						<span class="floor-text">手机</span>
+						<img class="floor-img" src="<%= require('../image/F1-b.jpg')%>" alt="双开门冰箱" />
+					</a>
+				</li>
+				<li class="floor-item">
+					<a href="./list.html?categoryId=100013">
+						<span class="floor-text">平板电脑</span>
+						<img class="floor-img" src="<%= require('../image/F1-c.jpg')%>" alt="平板电脑" />
+					</a>
+				</li>
+				<li class="floor-item">
+					<a href="./list.html?categoryId=100014">
+						<span class="floor-text">数码相机</span>
+						<img class="floor-img" src="<%= require('../image/F1-d.jpg')%>" alt="数码相机" />
+					</a>
+				</li>
+				<li class="floor-item">
+					<a href="./list.html?categoryId=100015">
+						<span class="floor-text">3C配件</span>
+						<img class="floor-img" src="<%= require('../image/F1-e.jpg')%>" alt="3C配件" />
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="floor-wrap">
+			<h1 class="floor-title">F3-服装箱包</h1>
+			<ul class="floor-list">
+				<li class="floor-item">
+					<a href="./list.html?categoryId=100016">
+						<span class="floor-text">女装</span>
+						<img class="floor-img" src="<%= require('../image/F1-a.jpg')%>" alt="女装" />
+					</a>
+				</li>
+				<li class="floor-item">
+					<a href="./list.html?categoryId=100017">
+						<span class="floor-text">帽子专区</span>
+						<img class="floor-img" src="<%= require('../image/F1-b.jpg')%>" alt="帽子专区" />
+					</a>
+				</li>
+				<li class="floor-item">
+					<a href="./list.html?categoryId=100018">
+						<span class="floor-text">旅行箱</span>
+						<img class="floor-img" src="<%= require('../image/F1-c.jpg')%>" alt="旅行箱" />
+					</a>
+				</li>
+				<li class="floor-item">
+					<a href="./list.html?categoryId=100019">
+						<span class="floor-text">手提包</span>
+						<img class="floor-img" src="<%= require('../image/F1-d.jpg')%>" alt="手提包" />
+					</a>
+				</li>
+				<li class="floor-item">
+					<a href="./list.html?categoryId=100020">
+						<span class="floor-text">保暖内衣</span>
+						<img class="floor-img" src="<%= require('../image/F1-e.jpg')%>" alt="保暖内衣" />
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="floor-wrap">
+			<h1 class="floor-title">F4-食品生鲜</h1>
+			<ul class="floor-list">
+				<li class="floor-item">
+					<a href="./list.html?categoryId=100021">
+						<span class="floor-text">最爱零食</span>
+						<img class="floor-img" src="<%= require('../image/F1-a.jpg')%>" alt="最爱零食" />
+					</a>
+				</li>
+				<li class="floor-item">
+					<a href="./list.html?categoryId=100022">
+						<span class="floor-text">生鲜</span>
+						<img class="floor-img" src="<%= require('../image/F1-b.jpg')%>" alt="生鲜" />
+					</a>
+				</li>
+				<li class="floor-item">
+					<a href="./list.html?categoryId=100023">
+						<span class="floor-text">半成片菜</span>
+						<img class="floor-img" src="<%= require('../image/F1-c.jpg')%>" alt="半成片菜" />
+					</a>
+				</li>
+				<li class="floor-item">
+					<a href="./list.html?categoryId=100024">
+						<span class="floor-text">速冻专区</span>
+						<img class="floor-img" src="<%= require('../image/F1-d.jpg')%>" alt="速冻专区" />
+					</a>
+				</li>
+				<li class="floor-item">
+					<a href="./list.html?categoryId=100025">
+						<span class="floor-text">进口牛奶</span>
+						<img class="floor-img" src="<%= require('../image/F1-e.jpg')%>" alt="进口牛奶" />
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="floor-wrap">
+			<h1 class="floor-title">F5-酒水饮料</h1>
+			<ul class="floor-list">
+				<li class="floor-item">
+					<a href="./list.html?categoryId=100026">
+						<span class="floor-text">进口洋酒</span>
+						<img class="floor-img" src="<%= require('../image/F1-a.jpg')%>" alt="进口洋酒" />
+					</a>
+				</li>
+				<li class="floor-item">
+					<a href="./list.html?categoryId=100027">
+						<span class="floor-text">白酒</span>
+						<img class="floor-img" src="<%= require('../image/F1-b.jpg')%>" alt="白酒" />
+					</a>
+				</li>
+				<li class="floor-item">
+					<a href="./list.html?categoryId=100028">
+						<span class="floor-text">红酒</span>
+						<img class="floor-img" src="<%= require('../image/F1-c.jpg')%>" alt="红酒" />
+					</a>
+				</li>
+				<li class="floor-item">
+					<a href="./list.html?categoryId=100029">
+						<span class="floor-text">饮料</span>
+						<img class="floor-img" src="<%= require('../image/F1-d.jpg')%>" alt="饮料" />
+					</a>
+				</li>
+				<li class="floor-item">
+					<a href="./list.html?categoryId=100030">
+						<span class="floor-text">调制鸡尾酒</span>
+						<img class="floor-img" src="<%= require('../image/F1-e.jpg')%>" alt="调制鸡尾酒" />
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<%= require('html-loader!./layout/footer.html')%>		<!-- 底部链接，版权 -->
+	</body>
+</html>

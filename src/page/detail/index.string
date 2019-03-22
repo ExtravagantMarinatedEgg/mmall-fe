@@ -1,12 +1,12 @@
 <div class="intro-wrap">
     <div class="p-img-con">
         <div class="main-img-con">
-            <img class="main-img" src="{{imageHost}}{{mainImage}}" alt="{{name}}"/>
+            <img class="main-img" src="{{imageHost}}{{mainImage}}" alt="{{name}}" />
         </div>
         <ul class="p-img-list">
             {{#subImages}}
             <li class="p-img-item">
-                <img class="p-img" src="{{imageHost}}{{.}}" alt="{{name}}" />
+                <img class="p-img" src="{{imageHost}}{{.}}" alt="{{name}}">
             </li>
             {{/subImages}}
         </ul>
@@ -16,7 +16,7 @@
         <p class="p-subtitle">{{subtitle}}</p>
         <div class="p-info-item p-price-con">
             <span class="label">价格:</span>
-            <span class="info">￥{{price}}</span>
+            <span class="info">{{price}}</span>
         </div>
         <div class="p-info-item">
             <span class="label">库存:</span>
@@ -24,7 +24,7 @@
         </div>
         <div class="p-info-item p-count-con">
             <span class="label">数量:</span>
-            <input class="p-count" value="1" readonly=""/>
+            <input class="p-count" value="1" readonly="" />
             <span class="p-count-btn plus">+</span>
             <span class="p-count-btn minus">-</span>
         </div>
@@ -36,7 +36,9 @@
 <div class="detail-wrap">
     <div class="detail-tab-con">
         <ul class="tab-list">
-            <li class="tab-item active">详细描述</li>
+            <li class="tab-item active">商品介绍</li> 
+            <li class="tab-item">商品评论</li> 
+            <li class="tab-item">售后保障</li> 
         </ul>
     </div>
     <div class="detail-con">
