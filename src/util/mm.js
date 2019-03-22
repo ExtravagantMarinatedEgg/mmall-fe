@@ -8,7 +8,7 @@
 'use strict';
 var Hogan = require('hogan');
 var conf = {
-    serverHost : ''
+    serverHost : 'marinatedegg.top:81'
 };
 var _mm = {
     // 网络请求
