@@ -5,7 +5,7 @@
  */
 var Hogan = require('hogan');
 var conf = {
-	serverHost : 'http://127.0.0.1:8080'
+	serverHost : 'http://marinatedegg.top:8080'
 }
 
 var _mm = {
