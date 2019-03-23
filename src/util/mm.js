@@ -5,7 +5,7 @@
  */
 var Hogan = require('hogan');
 var conf = {
-	serverHost : 'http://127.0.0.1:81'
+	serverHost : ''
 }
 
 var _mm = {
